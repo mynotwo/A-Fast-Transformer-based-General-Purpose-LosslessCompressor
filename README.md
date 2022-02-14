@@ -1,12 +1,12 @@
-##TRACE: A Fast Transformer-based General-Purpose Lossless Compressor
+## TRACE: A Fast Transformer-based General-Purpose Lossless Compressor
 
-###Introduction
+### Introduction
 
 This repository contains the source code and dataset link mentioned in WWW 2022 accepted paper "TRACE:A Fast Transformer-based General-Purpose Lossless Compressor". TRACE is a deep-learning based lossless compressor which compresses byte streams. The model estimates probability of incoming bytes and arithmetic coder utilize this probability to encode.  We want to focus at model sequencial representation ability so **our method do not have pretraining stage**, which mean the program start compression when model knows nothing, and adaptively adjust model parameters during compression. If you want higher compression ratio, do several epochs pretraining would help a lot.  
 
 The code of performer is from https://github.com/google-research/google-research/tree/master/performer/models/slim_performer
  
-###Requirements
+### Requirements
 
 Nvidia-driver 455.38
 CUDA 11.1
@@ -14,7 +14,7 @@ cudnn 7605
 pytorch==1.7.0
 numpy==1.18.5
 
-###Usage
+### Usage
 
 ```
 git clone https://github.com/mynotwo/A-Fast-Transformer-based-General-Purpose-LosslessCompressor.git
